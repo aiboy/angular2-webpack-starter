@@ -167,6 +167,11 @@ module.exports = function (options) {
           use: 'file-loader'
         },
 
+        {
+          test: /\.(pug|jade)$/,
+          use: 'pug-html-loader'
+        }
+
       ],
 
     },
